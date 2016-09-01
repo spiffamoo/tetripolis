@@ -1,0 +1,40 @@
+#ClickArea {
+  position: relative;
+}
+
+#GameView {
+  position: relative;
+  /*
+  border: 1px solid black;
+  */
+}
+
+@-webkit-keyframes Error {
+  0% {opacity: 1;}
+  75%  {opacity: 1;}
+  100%  {opacity: 0;}
+}
+
+@keyframes Error {
+  0% {opacity: 1;}
+  75%  {opacity: 1;}
+  100%  {opacity: 0;}
+}
+
+#StatusMsg {
+  position: relative;
+  left: 300px;
+  font-size:1.5em;
+}
+
+#CityOverview {
+  position: fixed;
+  top: 25px;
+  left: 1100px;
+}
+
+#PieceQueueSpan {
+  position: fixed;
+  top: 100px;
+  left: 1100px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <script src="Tetripolis.js"></script>
+<head>
+<link rel="stylesheet" type="text/css" href="Tetripolis.css">
+</head>
+
+<body onload="initializeGrid()">
+<img id="piecesquare" src="tetromino_square.jpg" hidden>
+<img id="pieceL" src="tetromino_L.jpg" hidden>
+<img id="piecemirrorL" src="tetromino_mirrorL.jpg" hidden>
+<img id="pieceS" src="tetromino_S.jpg" hidden>
+<img id="piecemirrorS" src="tetromino_mirrorS.jpg" hidden>
+<img id="pieceT" src="tetromino_T.jpg" hidden>
+<img id="piecelong" src="tetromino_long.jpg" hidden>
+
+<img id="camp" src="tent.png" hidden>
+<img id="fertile" src="grass.png" hidden>
+<img id="forest" src="tree.png" hidden>
+<img id="mountain" src="mountain.jpg" hidden>
+<img id="plains" src="plain.jpg" hidden>
+<img id="rock" src="rock.jpg" hidden>
+<img id="water" src="water.png" hidden>
+
+<img id="apartment" src="apartment.jpg" hidden>
+<img id="factory" src="factory.jpg" hidden>
+<img id="megafarm" src="farm.jpg" hidden>
+<img id="farm" src="farm.jpg" hidden>
+<img id="megalumbermill" src="lumbermill.jpg" hidden>
+<img id="lumbermill" src="lumbermill.jpg" hidden>
+<img id="megamall" src="moneybag.png" hidden>
+<img id="mall" src="moneybag.png" hidden>
+<img id="megamine" src="mine.jpg" hidden>
+<img id="mine" src="mine.jpg" hidden>
+<img id="orchard" src="fruit tree.jpg" hidden>
+<img id="pasture" src="cow.png" hidden>
+<img id="ranch" src="sheep.jpg" hidden>
+<img id="residence" src="house.png" hidden>
+<img id="shop" src="coin.jpg" hidden>
+<img id="suburb" src="suburb.jpg" hidden>
+<img id="townhall" src="townhall.png" hidden>
+<img id="hammer" src="hammer.png" hidden>
+<div>
+<span id="ClickArea" width="1200" height="790" onmousemove="Grid.highlightTileFromMouseMove(event)">
+<canvas id="GameView" width="1200" height="790">
+</canvas>
+</span>
+<span id="CityOverview">
+</span>
+<span id="PieceQueueSpan">
+  <canvas id="PieceQueueDisplay" width="100" height="480">
+  </canvas>
+</span>
+</div>
+<br>
+<br>
+<!--<input type="button" id="EraseButton" value="Erase" onclick="whiteboardModeErase()">
+<input type="button" id="RestoreButton" value="Restore" onclick="whiteboardModeDraw()"> -->
+<input type="button" id="StartGameButton" value="Start" onclick="initializeGame()">
+<span id="Instructions" hidden>r - rotate<br>
+b - place district<br>
+s - toggle inspect mode
+</span>
+<span id="StatusMsg">
+</span>
+</body>
+
+<footer>
+  <p> 2016+ Yeo Li Cai </p>
+</footer>
+</html>
